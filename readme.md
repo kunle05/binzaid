@@ -10,7 +10,9 @@ A consulting business application to showcase company services, manage daily act
 cd frontend
 npm install
 npm run dev
+
 # or
+
 yarn dev
 ```
 
