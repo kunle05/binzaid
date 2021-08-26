@@ -22,6 +22,7 @@ const Logo = styled.h2`
     padding: 1rem;
     margin: 0;
     span {
+        font-weight: 800;
         vertical-align: middle;
     }
     @media (max-width: 992px) {
