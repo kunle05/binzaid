@@ -44,7 +44,7 @@ export default function HeaderNavbar() {
                         <a>
                             <Logo>
                                 <img src="/binzaid.jpg" alt="BinZaid" width="50" height="50" />
-                                <span className="m-3">Bin Zaid</span>
+                                <span className="m-1">Bin Zaid</span>
                             </Logo>
                         </a>
                     </Link>
