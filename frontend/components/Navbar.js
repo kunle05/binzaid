@@ -14,7 +14,7 @@ const GlobalNav = styled.div`
     }
 `;
 
-const Logo = styled.h2`
+export const Logo = styled.h2`
     font-size: 2.5rem;
     color: var(--lightGrey);
     background: black;
@@ -40,7 +40,7 @@ export default function HeaderNavbar() {
     return (
         <GlobalNav>
             <Navbar expand="md" className="p-0 dark">
-                <Container className="col-md-9">
+                <Container className="col-md-10">
                     <Link href="/">
                         <a>
                             <Logo>
