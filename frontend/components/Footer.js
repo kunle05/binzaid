@@ -6,7 +6,7 @@ import StyledFooter from "./styles/StyledFooter";
 export default function Footer() {
     return (
         <StyledFooter>
-            <Container className="col-md-10">
+            <Container className="col-lg-10">
                 <div className="d-flex">
                     <div className="d-flex">
                         <div className="px-3">
@@ -52,25 +52,25 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className="social-links px-3">
                         <div>
                             <Link href="/">
-                                <a className="social-icon">
+                                <a>
                                     <FontAwesomeIcon icon="envelope" /> 
                                 </a>
                             </Link>
                             <Link href="/">
-                                <a className="social-icon">
+                                <a>
                                     <FontAwesomeIcon icon={['fab', 'facebook']} /> 
                                 </a>
                             </Link>
                             <Link href="/">
-                                <a className="social-icon">
+                                <a>
                                     <FontAwesomeIcon icon={['fab', 'twitter']} /> 
                                 </a>
                             </Link>
                             <Link href="/">
-                                <a className="social-icon">
+                                <a>
                                     <FontAwesomeIcon icon={['fab', 'instagram']} /> 
                                 </a>
                             </Link>

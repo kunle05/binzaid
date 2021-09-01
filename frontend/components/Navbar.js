@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Link from "next/link";
 import styled from "styled-components";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, Container } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const GlobalNav = styled.div`
     color: var(--offWhite);
@@ -10,6 +11,37 @@ const GlobalNav = styled.div`
         a:hover {
             color: white;
             transition: color 0.5s;
+        }
+    }
+    .navbar-toggler {
+        color: black;
+    }
+    .navbar-nav {
+        position: absolute;
+    }
+    svg {
+        height: 2.7rem;
+        width: 3rem;
+        color: var(--lightGrey);
+    }
+    @media (max-width: 820px) {
+        .navbar-collapse {
+            color: black;
+            margin: 0 !important;
+        }
+        .navbar-nav {
+            /* flex-direction: row; */
+            flex-flow: wrap;
+            justify-content: space-around;
+            left: 0;
+            width: 100%;
+            padding: .5rem;
+            background-color: white;
+            opacity: 1;
+        }
+        .nav-item {
+            font-size: 1.5rem;
+            padding: 1rem;
         }
     }
 `;
@@ -39,7 +71,7 @@ export default function HeaderNavbar() {
 
     return (
         <GlobalNav>
-            <Navbar expand="md" className="p-0 dark">
+            <Navbar dark expand="lg" className="p-0 dark">
                 <Container className="col-md-10">
                     <Link href="/">
                         <a>
@@ -49,9 +81,17 @@ export default function HeaderNavbar() {
                             </Logo>
                         </a>
                     </Link>
-                    <NavbarToggler onClick={toggle} className="dark" />
-                    <Collapse isOpen={isOpen} navbar className="px-5">
+                    <NavbarToggler onClick={toggle}>
+                        <FontAwesomeIcon icon="ellipsis-v" />
+                    </NavbarToggler>
+                    <Collapse isOpen={isOpen} navbar className="mx-5">
                         <Nav className="mr-auto" navbar>
+                            <NavItem>
+                                <Link href="/comp">Components</Link>
+                            </NavItem>
+                            <NavItem>
+                                <Link href="/comp">Components</Link>
+                            </NavItem>
                             <NavItem>
                                 <Link href="/comp">Components</Link>
                             </NavItem>

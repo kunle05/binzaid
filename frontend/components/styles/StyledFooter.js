@@ -7,8 +7,10 @@ const StyledFooter = styled.footer`
     }
     .d-flex {
         justify-content: space-between;
+        flex-flow: wrap;
         .px-3 {
             margin-right: 6rem;
+            margin-bottom: 3rem;
         }
         .px-3:last-child {
             margin-right: 0;
@@ -31,19 +33,24 @@ const StyledFooter = styled.footer`
             margin-right: .5rem;
             transition: all 0.5s;
         }
-        a:hover {
-            color: initial;
-            text-decoration: underline;
-        }
     }
     svg {
         height: 2.5rem;
         width: 2.5rem;
         margin-right: 2.5rem;
+        color: var(--black);
+    }
+    a:hover, svg:hover {
         color: var(--blue);
+        text-decoration: underline;
+    }
+    .social-links a:last-child {
+        svg {
+            margin-right: 0;
+        }
     }
     p {
-        margin: 3rem 0;
+        margin: 1rem 0;
         font-size: 2.5rem;
         color: #a5a5a5;
     }
@@ -51,6 +58,11 @@ const StyledFooter = styled.footer`
         font-size: 1.5rem;
         padding-top: .5rem;
         margin: 0;
+    }
+    @media (max-width: 820px) {
+        .px-3 {
+            margin-right: 2rem !important;
+        }
     }
 `;
 
