@@ -18,6 +18,12 @@ const GlobalNav = styled.div`
     }
     .navbar-nav {
         position: absolute;
+        transition: all .5s;
+    }
+    .show .navbar-nav {
+        top: 71px;
+        opacity: 1;
+        transition: all .5s;
     }
     svg {
         height: 2.7rem;
@@ -37,7 +43,8 @@ const GlobalNav = styled.div`
             width: 100%;
             padding: .5rem;
             background-color: white;
-            opacity: 1;
+            top: 60px;
+            opacity: 0;
         }
         .nav-item {
             font-size: 1.5rem;
