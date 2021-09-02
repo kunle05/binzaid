@@ -8,8 +8,7 @@ html,
   --grey: #3A3A3A;
   --gray: var(--grey);
   --gold: #edde65;
-  --lightGrey: #e1e1e1;
-  --lightGray: var(--lightGrey);
+  --white: #e1e1e1;
   --offWhite: #a2a0a2;
   --maxWidth: 100%;
   --bs: 0 6px 24px 0 rgba(0,0,0,0.09);

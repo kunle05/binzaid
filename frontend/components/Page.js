@@ -4,11 +4,13 @@ import Footer from "./Footer";
 
 export default function Page(props) {
     return (
-        <div className="content">
+        <>
             <Meta />
             <Navbar />
-            {props.children}
+            <div className="content">
+                {props.children}
+            </div>
             <Footer />
-        </div>
+        </>
     );
 };

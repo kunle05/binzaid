@@ -4,12 +4,12 @@ import styled from "styled-components";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, Container } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const GlobalNav = styled.div`
+const GlobalNav = styled.header`
     color: var(--offWhite);
     .nav-item {
         padding: 0 1.5rem;
         a:hover {
-            color: white;
+            color: var(--white);
             transition: color 0.5s;
         }
     }
@@ -28,7 +28,7 @@ const GlobalNav = styled.div`
     svg {
         height: 2.7rem;
         width: 3rem;
-        color: var(--lightGrey);
+        color: var(--white);
     }
     @media (max-width: 820px) {
         .navbar-collapse {
@@ -55,7 +55,7 @@ const GlobalNav = styled.div`
 
 export const Logo = styled.h2`
     font-size: 2.5rem;
-    color: var(--lightGrey);
+    color: var(--white);
     background: black;
     text-transform: uppercase;
     padding: 1rem;
