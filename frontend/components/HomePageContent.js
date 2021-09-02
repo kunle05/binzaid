@@ -6,7 +6,7 @@ import ServiceCard from "./ServiceCard";
 const HomeHero = styled.section`
     min-height: calc(100vh - 70px);
     background: linear-gradient(#2a2b2d, #4c4d4f);
-    color: var(--offWhite);
+    color: var(--white);
     display: flex;
     align-items: center;
     text-align: center;
