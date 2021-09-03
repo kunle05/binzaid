@@ -31,6 +31,12 @@ const ArticleCard = styled.div`
     a:hover {
         color: inherit;
     }
+    @media (max-width: 820px) {
+        padding: 2rem 1rem;
+    }
+    @media (max-width: 380px) {
+        padding: 2rem;
+    }
 `;
 
 const ServiceCard = ({ title, link }) => {

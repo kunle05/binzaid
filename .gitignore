@@ -41,3 +41,4 @@ layout.md
 variables.env
 *.env
 .keystone
+_static

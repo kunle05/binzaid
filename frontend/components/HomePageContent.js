@@ -34,6 +34,16 @@ const HomeHero = styled.section`
             background-color: #b7a415;
         }
     }
+    @media (max-width: 765px) {
+        .display-3 {
+            font-size: 3rem;
+            line-height: initial;
+        }
+        p {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+    }
 `;
 
 const Interior = styled.section`
@@ -44,6 +54,11 @@ const Interior = styled.section`
     .service {
         padding: 3rem;
         justify-content: space-evenly;
+    }
+    @media (max-width: 820px) {
+        .service {
+            padding: 0;
+        }
     }
 `;
 
